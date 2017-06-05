@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Layouts &raquo; Hero-Thirds</title>
+  <link rel="stylesheet" href="./static/lib/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./static/lib/css/keen-dashboards.css">
+  <link rel="stylesheet" href="./static/css/custom.css">
+  <script src="./static/lib/js/jquery.min.js"></script>
+</head>
+<body class="application">
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="./">Dashboard</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-sm-12">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Cell Title - D
+          </div>
+          <div id="gantt" class="chart-stage">
+            <button type="button" onclick="addTask()">Add Task</button>
+            <button type="button" onclick="removeTask()">Remove Task</button>
+            <button type="button" onclick="changeTimeDomain('1hr')">1 HR</button>
+            <button type="button" onclick="changeTimeDomain('3hr')">3 HR</button>
+            <button type="button" onclick="changeTimeDomain('6hr')">6 HR</button>
+            <button type="button" onclick="changeTimeDomain('1day')">1 DAY</button>
+            <button type="button" onclick="changeTimeDomain('1week')">1 WEEK</button>
+          </div>
+          <div class="chart-notes">
+            Notes about this chart
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+    <hr>
+    <p class="small text-muted">Built with &#9829; by <a href="https://keen.io">Keen IO</a></p>
+
+  </div>
+  <script src="./static/lib/js/bootstrap.min.js"></script>
+  <script src="./static/lib/js/holder.js"></script>
+
+  <script>
+    Holder.add_theme("white", { background:"#fff", foreground:"#a7a7a7", size:10 });
+  </script>
+
+  <script src="./static/lib/js/keen.min.js"></script>
+  <script src="./static/lib/js/meta.js"></script>
+
+</body>
+</html>
+    <script type="text/javascript" src="http://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-time.v1.min.js"></script>
+    <script type="text/javascript" src="http://d3js.org/d3-time-format.v2.min.js"></script>
+	<script type="text/javascript" src="./static/js/gantt.js"></script>
+	<script type="text/javascript" src="./static/js/chart.js"></script>
