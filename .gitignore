@@ -1,3 +1,8 @@
+# Working Files
+parser.py
+.DS_Store
+mail_test_1
+
 # Secret
 client_secrets.json
 
